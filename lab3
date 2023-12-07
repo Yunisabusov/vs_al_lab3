@@ -1,0 +1,20 @@
+
+def massiv_cemi(A):
+    cem = 0
+    for i in range(len(A)):
+        for j in range(len(A[i])):
+            cem += A[i][j]
+    return cem
+
+# Massivin təyin edilməsi
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Cəmin hesablanması
+netice = massiv_cemi(A)
+
+# Nəticənin çap olunması
+print("Massivin elementlərinin cəmi:", netice)
